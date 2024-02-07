@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Young+Serif&display=swap');
+
+body {
+    font-size: clamp(10%, 90%, 100%);
+    font-family: 'Bree Serif', serif;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.sub-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5%;
+    padding: 5%;
+    background-color: rgba(146, 146, 146, 0.548);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+
+#heading {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: transparent;
+    margin: auto;
+    padding: auto;
+}
+
+label {
+    font-size: 20px;
+}
+
+select {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: 'Bree Serif', serif;
+    width: 100px;
+    cursor: pointer;
+    outline-color: tomato;
+}
+
+option {
+    background-color: rgba(146, 146, 146, 0.548);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#female,
+#male,
+#others {
+    cursor: pointer;
+}
+
+.fnm,
+.lnm {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    padding: 5px;
+    width: 100%;
+}
+
+.eml,
+.pass {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+    padding: 5px;
+    width: 100%;
+}
+
+input:focus {
+    animation: inputmotion .4s ease;
+    border: 2px solid rgb(19, 230, 125);
+    color: rgb(0, 0, 0);
+}
+
+@keyframes inputmotion {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: .9;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+#signup {
+    margin-top: 15px;
+    font-size: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Young Serif', serif;
+    padding: 5px;
+    width: 100%;
+    color: rgb(218, 218, 209);
+    background-color: rgb(6, 110, 110);
+}
+
+#signup:hover {
+    cursor: pointer;
+    background-color: rgba(23, 23, 201, 0.76);
+}
+
+button:focus {
+    cursor: pointer;
+    background-color: rgba(23, 23, 201, 0.76);
+    animation: btnmotion .2s ease-out 1;
+}
+
+input::placeholder {
+    font-size: px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+@keyframes btnmotion {
+    0% {
+        scale: 1;
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(5px);
+        scale: .9;
+        transform: translateY(5px);
+
+    }
+
+    100% {
+        scale: 1;
+        transform: translateX(0);
+    }
+}
+
+#terms {
+    float: right;
+}
